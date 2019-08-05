@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Collector Game | Eli Gorniak</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Assistant|Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=ABeeZee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Nunito|Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./images/favicon2.png" type="image/x-icon">
+
+
+</head>
+
+<body onload="startGame()">
+    <div class="container-all">
+        <div class="instructions">
+            <h1>Welcome to Crystal Collector Game!</h1><br>
+            <p>At the beggining you will receive a random number.</br></br>
+                Each one of the four crystals have a random value - by clicking on the crystals you will add a specific
+                amount of points to your total score.</br></br>
+                You win the game by matching your total score to the random number. You lose if your total score goes
+                above the random number.</br></br>
+                The value of each crystal is hiden from you until you click on it.</br></br>
+                Each time when the game starts, the game will change the values of each crystal. Have fun!</br></br>
+            </p><br>
+        </div>
+        <div class="col-sm-12">
+            <img src="./images/crystal1.jpg" class="crystal" id="0" alt="crystal1" width="100px" height="100px" onclick="checkTotalScore(0)">
+            <img src="./images/crystal2.jpg" class="crystal" id="1" alt="crystal2" width="100px" height="100px" onclick="checkTotalScore(1)">
+            <img src="./images/crystal3.jpg" class="crystal" id="2" alt="crystal3" width="100px" height="100px" onclick="checkTotalScore(2)">
+            <img src="./images/crystal4.jpg" class="crystal" id="3"  alt="crystal4" width="100px" height="100px" onclick="checkTotalScore(3)">
+        </div>
+
+        <div class="game">
+            <h4>Random number:</h4>
+            <div id="randomNumber"></div><br>
+            <h4>Your score:</h4>
+            <div id="totalScore"></div><br>
+            <h4>Wins:</h4>
+            <div id="totalWins"></div><br>
+            <h4>Losses:</h4>
+            <div id="totalLosses"></div><br>
+
+        </div>
+        <br><br><br><br><br>
+    </div>
+
+    <footer class="footer">Copyright© All rights reserved | Eli Gorniak</footer>
+    <script type="text/javascript" src="./javascript/game.js">
+
+
+
+    </script>
+
+</body>
+
+</html>
